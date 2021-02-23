@@ -2,6 +2,7 @@ import os
 
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 import torch
 from torch.utils import data

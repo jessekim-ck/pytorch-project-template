@@ -70,8 +70,8 @@ class Trainer(object):
             self._write_log(f"{key}: {val}")
         self._write_log()
 
-        self._init_train_loader(args.csv_path, args.batch_size, args.num_workers)
-        self._init_test_loader(args.val_csv_path, args.batch_size*2, args.num_workers)
+        self._init_train_loader(self._args.csv_path, self._args.batch_size, self._args.num_workers)
+        self._init_test_loader(self._args.val_csv_path, self._args.batch_size*2, self._args.num_workers)
 
         for epoch in range(self._args.num_epochs):
             self._write_log(f"\nEpoch {epoch + 1}")
