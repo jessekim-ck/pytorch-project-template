@@ -13,6 +13,7 @@ def parse_args():
     parser.add_argument("--csv_path", type=str)
     parser.add_argument("--val_csv_path", type=str)
     parser.add_argument("--pretrained_weight", type=str)
+    parser.add_argument("--memo", type=str)
     return parser.parse_args()
 
 
