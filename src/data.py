@@ -17,8 +17,8 @@ WIDTH = None
 class Dataset(data.Dataset):
     def __init__(self, csv_path, transform):
         self.transform = transform
-        self.length = None
         data = pd.read_csv(csv_path)
+        self.length = None
         raise NotImplementedError
 
     def __getitem__(self, idx):
